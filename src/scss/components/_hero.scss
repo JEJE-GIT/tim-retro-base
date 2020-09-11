@@ -1,0 +1,59 @@
+
+
+:root {
+
+  .hero h2 {
+    font-size: 80px;
+    line-height: 96px;
+    color: var(--couleur-primaire);
+  }
+
+  .hero p, .hero a {
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--couleur-primaire);
+    text-decoration: none;
+  }
+
+  .hero {
+    height: 80vh;
+    position: relative;
+    background: black;
+  }
+
+  .hero video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+
+  .hero .content {
+    width: 100%;
+    height: 100%;
+
+    background: var(--degrader-principale);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .hero::after {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+}
